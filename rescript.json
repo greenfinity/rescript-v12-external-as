@@ -22,7 +22,7 @@
       "in-source": true
     }
   ],
-  "dependencies": ["@rescript/react", "rescript-logger"],
+  "dependencies": ["@rescript/react"],
   "dev-dependencies": [],
-  "ppx-flags": ["rescript-logger/ppx"]
+  "ppx-flags": []
 }

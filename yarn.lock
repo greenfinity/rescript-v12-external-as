@@ -33,17 +33,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rescript/react@npm:^0.14.0-rc.1":
+  version: 0.14.0
+  resolution: "@rescript/react@npm:0.14.0"
+  peerDependencies:
+    react: ">=19.0.0"
+    react-dom: ">=19.0.0"
+  checksum: 10/bcfac2d750c0707079ee2369fd418726b73180610dcc65278892f0d797af1e1bddef6b7cce56b2d3a9ff7325ed00510d75cbfa65decc600369c58377c685bfae
+  languageName: node
+  linkType: hard
+
 "@rescript/win32-x64@npm:12.0.0-beta.4":
   version: 12.0.0-beta.4
   resolution: "@rescript/win32-x64@npm:12.0.0-beta.4"
   conditions: os=win32 & cpu=x64
-  languageName: node
-  linkType: hard
-
-"rescript-logger@npm:4.0.0":
-  version: 4.0.0
-  resolution: "rescript-logger@npm:4.0.0"
-  checksum: 10/50956d0a780cff053e87bef034f57f83ef84a11b987800c67facae59e4da1c2740fad736d799302ba42edef5889a6be9aac48c1e22fc4d4851e99911c6939c19
   languageName: node
   linkType: hard
 
@@ -81,9 +84,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sample-v12-external-as@workspace:."
   dependencies:
+    "@rescript/react": "npm:^0.14.0-rc.1"
     rescript: "npm:^12.0.0-beta.4"
-    rescript-logger: "npm:4.0.0"
   peerDependencies:
+    "@rescript/react": ^0.14.0-rc.1
     rescript: ^12.0.0-beta.4
   languageName: unknown
   linkType: soft

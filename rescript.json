@@ -1,0 +1,28 @@
+{
+  "name": "sample-v12-external-as",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "jsx": {
+    "version": 4,
+    "mode": "classic"
+  },
+  "warnings": {
+    "error": "+101"
+  },
+  "suffix": ".bs.mjs",
+  "namespace": true,
+  "compiler-flags": ["-bs-no-version-header"],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true
+    }
+  ],
+  "dependencies": ["@rescript/react", "rescript-logger"],
+  "dev-dependencies": [],
+  "ppx-flags": ["rescript-logger/ppx"]
+}
